@@ -1,4 +1,5 @@
  import { Canvas } from '@react-three/fiber'
+ const heartModelUrl = '/models/heart.glb'
 import {
   OrbitControls,
   Environment,
@@ -10,7 +11,7 @@ import { useRef, useState } from 'react'
 import './HeartModel.css'
 
 function HeartAsset() {
-  const { scene } = useGLTF('/src/assets/heart.glb')
+  const { scene } = useGLTF( heartModelUrl)
 
   return (
     <Float
@@ -27,7 +28,7 @@ function HeartAsset() {
   )
 }
 
-useGLTF.preload('/src/assets/heart.glb')
+ useGLTF.preload(heartModelUrl)
 
 function HeartModel() {
   const controlsRef = useRef()
