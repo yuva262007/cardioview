@@ -1,0 +1,168 @@
+.navbar {
+  height: 76px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid #eee5e5;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #201818;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e63946;
+  color: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.25);
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo-text span {
+  color: #e63946;
+}
+
+.logo-text small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 7px;
+  letter-spacing: 1.7px;
+  color: #958989;
+  font-weight: 600;
+}
+
+/* Navigation */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  color: #756b6b;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #e63946;
+  background: #fff3f3;
+}
+
+.nav-link.active {
+  color: #e63946;
+  background: #fff0f0;
+  font-weight: 600;
+}
+
+/* Right actions */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-button,
+.profile-button {
+  border: 1px solid #eee2e2;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.theme-button {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  color: #625858;
+}
+
+.theme-button:hover {
+  background: #fff3f3;
+  color: #e63946;
+}
+
+.profile-button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #241a1a;
+  color: white;
+
+  font-weight: 700;
+}
+
+.profile-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+}

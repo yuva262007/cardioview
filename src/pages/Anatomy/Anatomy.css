@@ -1,0 +1,394 @@
+.anatomy-page {
+  min-height: 100vh;
+  background: #faf7f7;
+  color: #211919;
+}
+
+.anatomy-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 50px 6% 70px;
+}
+
+.anatomy-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.anatomy-eyebrow {
+  margin: 0 0 9px;
+  color: #e63946;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.anatomy-heading h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: -1.8px;
+}
+
+.anatomy-heading h1 span {
+  color: #e63946;
+}
+
+.anatomy-heading p:not(.anatomy-eyebrow) {
+  max-width: 600px;
+  margin: 11px 0 0;
+  color: #8b8080;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.model-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border: 1px solid #eadede;
+  border-radius: 10px;
+  background: white;
+  color: #756b6b;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.model-status span,
+.live-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #39a96b;
+  box-shadow: 0 0 0 4px #eaf8f0;
+}
+
+.anatomy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 20px;
+}
+
+.model-panel {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #eee3e3;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 18px 45px rgba(80, 35, 35, 0.055);
+}
+
+.model-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 5px 15px;
+}
+
+.model-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #302525;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.model-title svg {
+  color: #e63946;
+}
+
+.model-hint {
+  color: #aaa0a0;
+  font-size: 9px;
+}
+
+.model-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 15px;
+  padding: 15px 8px 2px;
+  border-top: 1px solid #f0e8e8;
+}
+
+.model-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-label {
+  color: #aaa0a0;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.model-footer strong {
+  color: #4c4141;
+  font-size: 10px;
+}
+
+.live-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.vessel-panel {
+  padding: 24px;
+  border: 1px solid #eee3e3;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 18px 45px rgba(80, 35, 35, 0.055);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0e8e8;
+}
+
+.panel-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #fff0f0;
+  color: #e63946;
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.panel-heading p {
+  margin: 4px 0 0;
+  color: #a09595;
+  font-size: 9px;
+}
+
+.vessel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.vessel-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #eee5e5;
+  border-radius: 11px;
+  background: #fffafa;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.vessel-item:hover {
+  border-color: #e8bfc3;
+  transform: translateY(-1px);
+}
+
+.vessel-item.selected {
+  border-color: #e63946;
+  background: #fff3f3;
+}
+
+.vessel-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vessel-icon {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: white;
+  color: #e63946;
+}
+
+.vessel-left strong {
+  display: block;
+  color: #413636;
+  font-size: 11px;
+}
+
+.vessel-left span {
+  display: block;
+  margin-top: 3px;
+  color: #a29898;
+  font-size: 8px;
+}
+
+.vessel-value {
+  color: #e63946;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.selected-vessel {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #faf6f6;
+}
+
+.selected-label {
+  margin: 0;
+  color: #aaa0a0;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.selected-vessel h3 {
+  margin: 7px 0 2px;
+  color: #2d2323;
+  font-size: 25px;
+}
+
+.selected-vessel > p:not(.selected-label) {
+  margin: 0;
+  color: #948888;
+  font-size: 9px;
+}
+
+.indicator {
+  margin-top: 22px;
+}
+
+.indicator-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.indicator-top span {
+  color: #958989;
+  font-size: 9px;
+}
+
+.indicator-top strong {
+  color: #e63946;
+  font-size: 11px;
+}
+
+.indicator-bar {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eadede;
+}
+
+.indicator-bar div {
+  height: 100%;
+  border-radius: inherit;
+  background: #e63946;
+  transition: width 0.4s ease;
+}
+
+.indicator-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  color: #8c8080;
+  font-size: 8px;
+}
+
+.indicator-note svg {
+  color: #e63946;
+}
+
+.anatomy-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.anatomy-info > div {
+  padding: 22px;
+  border: 1px solid #eee3e3;
+  border-radius: 16px;
+  background: white;
+}
+
+.anatomy-info span {
+  color: #e63946;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.anatomy-info h3 {
+  margin: 8px 0 6px;
+  font-size: 13px;
+}
+
+.anatomy-info p {
+  margin: 0;
+  color: #958989;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.anatomy-disclaimer {
+  margin: 22px auto 0;
+  max-width: 700px;
+  text-align: center;
+  color: #aaa0a0;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .anatomy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vessel-panel {
+    order: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .anatomy-container {
+    padding: 35px 5% 50px;
+  }
+
+  .anatomy-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .anatomy-heading h1 {
+    font-size: 32px;
+  }
+
+  .model-footer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .anatomy-info {
+    grid-template-columns: 1fr;
+  }
+}
